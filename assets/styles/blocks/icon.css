@@ -1,0 +1,12 @@
+.theme-icon {
+  display: inline-block;
+  min-width: min(12px, 100%);
+  width: fit-content;
+  text-align: center;
+}
+.theme-icon .icon-title {
+  margin-top: -5px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=icon.css.map */

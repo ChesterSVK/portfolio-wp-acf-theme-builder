@@ -1,0 +1,69 @@
+@mixin mq($mq)
+  @if $mq == mM320
+    @media (max-width: 320px)
+      @content
+  @if $mq == mM480
+    @media (min-width: 320px) and (max-width: 480px)
+      @content
+  @if $mq == mM580
+    @media (max-width: 480px) and (max-width: 580px)
+      @content
+  @if $mq == mM767
+    @media (min-width: 580px) and (max-width: 767px)
+      @content
+  @if $mq == mM991
+    @media (min-width: 767px) and (max-width: 991px)
+      @content
+  @if $mq == mM1200
+    @media (min-width: 991px) and (max-width: 1200px)
+      @content
+  @if $mq == mM1500
+    @media (min-width: 1200px) and (max-width: 1500px)
+      @content
+  @if $mq == m320
+    @media (min-width: 320px)
+      @content
+  @if $mq == m480
+    @media (min-width: 480px)
+      @content
+  @if $mq == m580
+    @media (min-width: 580px)
+      @content
+  @if $mq == m767
+    @media (min-width: 767px)
+      @content
+  @if $mq == m991
+    @media (min-width: 991px)
+      @content
+  @if $mq == m1200
+    @media (min-width: 1200px)
+      @content
+  @if $mq == m1500
+    @media (min-width: 1500px)
+      @content
+  @if $mq == M320
+    @media (max-width: 320px)
+      @content
+  @if $mq == M480
+    @media (max-width: 480px)
+      @content
+  @if $mq == M580
+    @media (max-width: 580px)
+      @content
+  @if $mq == M767
+    @media (max-width: 767px)
+      @content
+  @if $mq == M991
+    @media (max-width: 991px)
+      @content
+  @if $mq == M1200
+    @media (max-width: 1200px)
+      @content
+  @if $mq == M1500
+    @media (max-width: 1500px)
+      @content
+
+  @if $mq == retina
+    //@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx)
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi), only screen and (min-resolution: 2dppx)
+      @content

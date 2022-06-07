@@ -1,0 +1,54 @@
+@import "fonts"
+
+$c-1: #000000
+$c-2: #A32035
+$c-3: #87898C
+$c-4: #ffffff
+
+
+$mobile-max-width: 580px
+$tablet-max-width: 768px
+$small-screens-max-width: 991px
+$notebook-max-width: 1400px
+$desktop-max-width: 1920px
+
+
+
+
+html
+  font-size: 18px
+  font-weight: normal
+  line-height: 1.5
+  -webkit-text-size-adjust: 100%
+  background: #fff
+  color: #000
+  box-sizing: border-box
+
+
+h1, h2, h3
+  font-family: "Verdana", serif
+
+html, body, a, p, h1, h2, h3, h4, h5, h6, ul, li
+  font-family: "Verdana", serif
+  font-weight: normal
+
+
+html, body *
+  outline: none
+
+//TODO retina
+//TODO Sometimes print styles
+
+//Mobile screens
+@media (max-width: $mobile-max-width)
+//Tablet screens
+@media (min-width: $mobile-max-width) and (max-width: $tablet-max-width)
+//Small screen edge case
+@media (min-width: $tablet-max-width) and (max-width: $small-screens-max-width)
+//Notebook screens
+@media (min-width: $small-screens-max-width) and (max-width: $notebook-max-width)
+//Desktop screens
+@media (min-width: $notebook-max-width) and (max-width: $desktop-max-width)
+//Large screens
+@media (min-width: $desktop-max-width)
+
